@@ -109,39 +109,25 @@
     <!-- Sidebar -->
     <div id="sidebar" class="sidebar">
         <div class="admin-profile">
-            <img src="<?= base_url('/assets/gallery/admin-profile.jpg') ?>" alt="Admin Profile">
+
             <div class="admin-info">
                 <strong>Admin Name</strong>
-                <small>Admin Role</small>
+
             </div>
         </div>
         <h2>Admin Panel</h2>
         <ul class="nav flex-column">
             <li class="nav-item">
-                <a class="nav-link" href="<?= base_url('admin/course'); ?>">
-                    <i class="fa fa-book"></i> <span>Courses</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="<?= base_url('admin/lesson'); ?>">
-                    <i class="fa fa-chalkboard-teacher"></i> <span>Lesson</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="<?= base_url('admin/user'); ?>">
-                    <i class="fa fa-users"></i> <span>Users</span>
-                </a>
-            </li>
-            <li class="nav-item">
                 <a class="nav-link" href="<?= base_url('admin/teacher'); ?>">
-                    <i class="fa fa-user-tie"></i> <span>Teacher</span>
+                    <i class="fa fa-calendar"></i> <span>Agenda</span>
                 </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="<?= base_url('admin/gallery'); ?>">
-                    <i class="fa fa-images"></i> <span>Gallery</span>
+                    <i class="fa fa-newspaper"></i> <span>Gallery</span>
                 </a>
             </li>
+
             <li class="nav-item">
                 <a class="nav-link" href="<?= base_url('/'); ?>">
                     <i class="fa fa-home"></i> <span>Home</span>

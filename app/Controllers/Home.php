@@ -134,10 +134,10 @@ class Home extends Controller
             }
 
             $userData = [
-                'username' => $this->request->getPost('username'),
-                'email' => $this->request->getPost('email'),
-                'password' => password_hash($this->request->getPost('password'), PASSWORD_DEFAULT),
-                'role' => $this->request->getPost('role'),
+                'username' => $this->request->getVar('username'),
+                'email' => $this->request->getVar('email'),
+                'password' => password_hash($this->request->getVar('password'), PASSWORD_DEFAULT),
+                'role' => $this->request->getVar('role'),
             ];
 
             $this->userModel->insert($userData);
@@ -157,9 +157,9 @@ class Home extends Controller
     public function login()
     {
         if ($this->request->getMethod() === 'post') {
-            $username = $this->request->getPost('username');
-            $password = $this->request->getPost('password');
-            $role = $this->request->getPost('role');
+            $username = $this->request->getVar('username');
+            $password = $this->request->getVar('password');
+            $role = $this->request->getVar('role');
 
             $user = $this->userModel->getUserByRole($username, $role);
 
